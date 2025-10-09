@@ -1,0 +1,195 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/.2e649a99fb42016ee5c852600685019185caa28e-audit.json",
+    "files": [
+        {
+            "date": 1749960440357,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-15-06-10-error.log",
+            "hash": "c94e5fa021d2fea85445e12b8608a00535118ccf9788e94da1f2522f2ddd30c6"
+        },
+        {
+            "date": 1749981607216,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-15-06-16-error.log",
+            "hash": "e3d6c3ebb44dfbc125a94423d2987258e67e26e122b6298747b4af7f70b305f1"
+        },
+        {
+            "date": 1750029036825,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-16-06-05-error.log",
+            "hash": "37391f772422f76e4421d6725a70d905c676be0964eab7c39f5eafbed41622b9"
+        },
+        {
+            "date": 1750044801143,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-16-06-09-error.log",
+            "hash": "25c0a006921a9002b46e986802629abba68b2fe768f04bbc9c24e14ddb62b362"
+        },
+        {
+            "date": 1750491755422,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-21-06-13-error.log",
+            "hash": "7f3d25b77b6e32a000ec48f95a5ca3dad1601ee0151033d3113a52ec81475468"
+        },
+        {
+            "date": 1750566193120,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-22-06-10-error.log",
+            "hash": "8c5316f6ce9a9e7030d898a7dd4a61ae0451d48a75dfb95f5107911eb9636b13"
+        },
+        {
+            "date": 1750568525628,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-22-06-11-error.log",
+            "hash": "dc2954148b919e4816b1ff48e5d77c38564380716cbd538b47d0a3fbb1d5eddf"
+        },
+        {
+            "date": 1750598498582,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-22-06-19-error.log",
+            "hash": "53f40e052419dc3201b269c2713df2dd297eb91516b25f1d35ba10063745ac50"
+        },
+        {
+            "date": 1750611642963,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-22-06-23-error.log",
+            "hash": "71f3b7793b9e3a69b3a91d9038e7e806bf8cf49b14f2640215351ba4dbcbdb4b"
+        },
+        {
+            "date": 1750616019911,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-23-06-00-error.log",
+            "hash": "1879fa34417ff6f457ab5e4d0060117d7af948a07d8d9dcd87bd33d9a4499117"
+        },
+        {
+            "date": 1750648590447,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-23-06-09-error.log",
+            "hash": "f248d302783d1e07890141d7de981c12aee11d4863e4d7b963d9d154a2c36253"
+        },
+        {
+            "date": 1750658095720,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-23-06-11-error.log",
+            "hash": "43d6cfdd978e9f68d703bb646adc2d5314b518acbe7b34614fe734be472993ba"
+        },
+        {
+            "date": 1750659240435,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-23-06-12-error.log",
+            "hash": "e5474f52335bf919ff282dd479d83fe45e14bab58362f94a53135b15c27f03f1"
+        },
+        {
+            "date": 1750684584698,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-23-06-19-error.log",
+            "hash": "7a9716515a397d72f2a664cec9b5c94a6ba943815cc3c1253c89f69ede81e60c"
+        },
+        {
+            "date": 1750688029718,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-23-06-20-error.log",
+            "hash": "f6516fad44ffc833984db2b0bd568aa5edb09a0c6ad4d5c807b9415ad96b2cdf"
+        },
+        {
+            "date": 1750691196229,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-23-06-21-error.log",
+            "hash": "4b6cddc6b2ade532e2fd34fcb5f94f280abab1be1a8078178999f63e622a60db"
+        },
+        {
+            "date": 1750730305219,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-24-06-07-error.log",
+            "hash": "e7dc39bf9b643b89756b8df897c16121e7212d2e8a14516738a529d815e147df"
+        },
+        {
+            "date": 1750733912620,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-24-06-08-error.log",
+            "hash": "c6990574bf68040c85643eaa2550a3c877686b2256dfabd6c50c26f2d12fc68c"
+        },
+        {
+            "date": 1750734282901,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-24-06-09-error.log",
+            "hash": "c597b5fd116d9de8c05921e12b4c1fde69b662ea625dec70304d12255def0c15"
+        },
+        {
+            "date": 1750752180479,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-24-06-14-error.log",
+            "hash": "bcf89ed8c6cd63ef9d1dedfbfaa9de7abbe55890191c4ebd00eecc3c8503fddc"
+        },
+        {
+            "date": 1750777763733,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-24-06-21-error.log",
+            "hash": "96fa2d7f8550c01e11fad09b81a36fa05f221f21094b54ecec6e6b1e208e65e8"
+        },
+        {
+            "date": 1750830323879,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-25-06-11-error.log",
+            "hash": "fb571a8721aa1c6bf99298880b65b932c6a1049727b902c9eecd85dd250dd140"
+        },
+        {
+            "date": 1750831534728,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-25-06-12-error.log",
+            "hash": "059be217bf9adb18be697df37b5970938261104861b7d27b6a143ffcb0fe8f72"
+        },
+        {
+            "date": 1750851601031,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-25-06-17-error.log",
+            "hash": "23d85fc35bf5bd3166fed174714bac6dc2842b4879e061b528e7ab4bb1464e92"
+        },
+        {
+            "date": 1750905950494,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-26-06-08-error.log",
+            "hash": "ecf293e2d1aaf72c1336ff7060255420804ce593dc8b5b04a9f4d6cdf2764ba3"
+        },
+        {
+            "date": 1750926935502,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-26-06-14-error.log",
+            "hash": "338a7b1440b4329ea888a1bc1e24c70ff1630d4c79fe227efa155d8ae116c905"
+        },
+        {
+            "date": 1750929873914,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-26-06-15-error.log",
+            "hash": "001bd9ae6c065b08efd517bff0ec4ab5a0635d948c3e0e98533747ba3d35a1da"
+        },
+        {
+            "date": 1750951162111,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-26-06-21-error.log",
+            "hash": "03f0bb730a1c56a09e4e18c202d7043c3438e191bd0387df61af6be9c8582f78"
+        },
+        {
+            "date": 1750959372621,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-26-06-23-error.log",
+            "hash": "63639f8203b88e8c4dd080e93e555ad83d042bea78dd6cc6f04c3143d770aa76"
+        },
+        {
+            "date": 1751015060349,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-27-06-15-error.log",
+            "hash": "047fa13eeaa6461a8fd5dbd971b1ea73d49b8e9eef5fdf4f6b7f9d2ed2697041"
+        },
+        {
+            "date": 1751020174814,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-27-06-16-error.log",
+            "hash": "6e63d7a286d35fa4f692f6202a3b025b28756361eaadfcb56f07e51268a868d0"
+        },
+        {
+            "date": 1751033393250,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-27-06-20-error.log",
+            "hash": "372b01ec38b3e5af77341c576324703651f3c9c9e9b93582433653bc17c448c5"
+        },
+        {
+            "date": 1751111467115,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-28-06-17-error.log",
+            "hash": "ca464f5a26125559eee9f37b8832543fb48f765656ea275b50ec12e0d779c9ec"
+        },
+        {
+            "date": 1751112530301,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-28-06-18-error.log",
+            "hash": "ffd74c1c9a119a602a3fe891aa9e6e93b85005f54a8d6922f54188548fe871db"
+        },
+        {
+            "date": 1751122967457,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-28-06-21-error.log",
+            "hash": "61645e44730b889858bd276ae662db7513c40b9fc5d8d0916d69c8ed2fa649f2"
+        },
+        {
+            "date": 1751134889124,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-29-06-00-error.log",
+            "hash": "c95ae13f3b4292c1a3b1b64127b3dd597361bd9b0bc6ce9b0cc3c3bb8bf7c15a"
+        },
+        {
+            "date": 1751166407366,
+            "name": "/home/morsed/Works/Nurul-Vai/news-paper/backend/logs/winston/errors/news-2025-29-06-09-error.log",
+            "hash": "75d973753472a591f49e4237baecea80b950cda80712811f91cef8832b077117"
+        }
+    ],
+    "hashType": "sha256"
+}

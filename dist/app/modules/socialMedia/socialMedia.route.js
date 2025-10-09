@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.SocialMediaRoutes = void 0;
+const express_1 = __importDefault(require("express"));
+const validateRequest_1 = __importDefault(require("../../middlewares/validateRequest"));
+const socialMedia_controller_1 = require("./socialMedia.controller");
+const socialMedia_validation_1 = require("./socialMedia.validation");
+const auth_1 = __importDefault(require("../../middlewares/auth"));
+const user_1 = require("../../../enum/user");
+const router = express_1.default.Router();
+router.post("/create", (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN, user_1.ENUM_USER_ROLE.SUPER_ADMIN, user_1.ENUM_USER_ROLE.EDITOR, user_1.ENUM_USER_ROLE.REPORTER), (0, validateRequest_1.default)(socialMedia_validation_1.SocialMediaValidation.createSocialMediaZodSchema), socialMedia_controller_1.SocialMediaController.createSocialMedia);
+router.get("/", socialMedia_controller_1.SocialMediaController.getAllSocialMedia);
+router.get("/:id", socialMedia_controller_1.SocialMediaController.getSingleSocialMedia);
+router.patch("/:id", (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN, user_1.ENUM_USER_ROLE.SUPER_ADMIN, user_1.ENUM_USER_ROLE.EDITOR, user_1.ENUM_USER_ROLE.REPORTER), (0, validateRequest_1.default)(socialMedia_validation_1.SocialMediaValidation.updateSocialMediaZodSchema), socialMedia_controller_1.SocialMediaController.updateSocialMedia);
+router.delete("/:id", (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN, user_1.ENUM_USER_ROLE.SUPER_ADMIN, user_1.ENUM_USER_ROLE.EDITOR, user_1.ENUM_USER_ROLE.REPORTER), socialMedia_controller_1.SocialMediaController.deleteSocialMedia);
+// router.patch("/toggle-status/:id", SocialMediaController.toggleActiveStatus);
+exports.SocialMediaRoutes = router;

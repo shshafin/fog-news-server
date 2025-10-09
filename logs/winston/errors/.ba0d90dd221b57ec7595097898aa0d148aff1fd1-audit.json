@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\projects\\news-paper\\backend\\logs\\winston\\errors\\.ba0d90dd221b57ec7595097898aa0d148aff1fd1-audit.json",
+    "files": [
+        {
+            "date": 1749427044187,
+            "name": "C:\\projects\\news-paper\\backend\\logs\\winston\\errors\\news-2025-09-06-05-error.log",
+            "hash": "0d94a1d00f2e78f50b24e3ec150ca1d2122648c675cce6442c42ef6a840f05c4"
+        },
+        {
+            "date": 1749427893679,
+            "name": "C:\\projects\\news-paper\\backend\\logs\\winston\\errors\\news-2025-09-06-06-error.log",
+            "hash": "bf9a616b1ce6c82fd8041320f788be920ae03834eb938b4a7ed9a8fe159100d6"
+        }
+    ],
+    "hashType": "sha256"
+}

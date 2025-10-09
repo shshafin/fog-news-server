@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.JobRoutes = void 0;
+const express_1 = __importDefault(require("express"));
+const validateRequest_1 = __importDefault(require("../../middlewares/validateRequest"));
+const job_controller_1 = require("./job.controller");
+const auth_1 = __importDefault(require("../../middlewares/auth"));
+const user_1 = require("../../../enum/user");
+const job_validation_1 = require("./job.validation");
+const fileHandlers_1 = require("../../../helpers/fileHandlers");
+const router = express_1.default.Router();
+router.post("/create", (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN, user_1.ENUM_USER_ROLE.SUPER_ADMIN, user_1.ENUM_USER_ROLE.EDITOR, user_1.ENUM_USER_ROLE.REPORTER), fileHandlers_1.uploadImage, (0, validateRequest_1.default)(job_validation_1.JobValidation.createJobZodSchema), job_controller_1.JobController.createJob);
+router.get("/", job_controller_1.JobController.getAllJobs);
+router.get("/:id", job_controller_1.JobController.getSingleJob);
+router.patch("/:id", (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN, user_1.ENUM_USER_ROLE.SUPER_ADMIN, user_1.ENUM_USER_ROLE.EDITOR, user_1.ENUM_USER_ROLE.REPORTER), fileHandlers_1.uploadImage, (0, validateRequest_1.default)(job_validation_1.JobValidation.updateJobZodSchema), job_controller_1.JobController.updateJob);
+router.delete("/:id", (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN, user_1.ENUM_USER_ROLE.SUPER_ADMIN, user_1.ENUM_USER_ROLE.EDITOR, user_1.ENUM_USER_ROLE.REPORTER), job_controller_1.JobController.deleteJob);
+exports.JobRoutes = router;

@@ -1,0 +1,20 @@
+{
+    "keep": {
+        "days": true,
+        "amount": 14
+    },
+    "auditLog": "C:\\projects\\news-papler-server\\backend\\logs\\winston\\errors\\.de4b7513822c7355ea4550aae4f9093d1f7d1d20-audit.json",
+    "files": [
+        {
+            "date": 1751284978792,
+            "name": "C:\\projects\\news-papler-server\\backend\\logs\\winston\\errors\\news-2025-30-06-18-error.log",
+            "hash": "026c0c702f08bf5f252e3d60be7064d03acc8f79ba58c475b77de814645f3515"
+        },
+        {
+            "date": 1751296821761,
+            "name": "C:\\projects\\news-papler-server\\backend\\logs\\winston\\errors\\news-2025-30-06-21-error.log",
+            "hash": "c40ea160132599c26521d78e8050715c65d582e98ab293fcb385d1bae8fe8dcd"
+        }
+    ],
+    "hashType": "sha256"
+}

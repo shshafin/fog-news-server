@@ -1,0 +1,20 @@
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.PollRoutes = void 0;
+const express_1 = __importDefault(require("express"));
+const validateRequest_1 = __importDefault(require("../../middlewares/validateRequest"));
+const poll_controller_1 = require("./poll.controller");
+const poll_validation_1 = require("./poll.validation");
+const user_1 = require("../../../enum/user");
+const auth_1 = __importDefault(require("../../middlewares/auth"));
+const router = express_1.default.Router();
+router.post("/create", (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN, user_1.ENUM_USER_ROLE.SUPER_ADMIN, user_1.ENUM_USER_ROLE.EDITOR, user_1.ENUM_USER_ROLE.REPORTER), (0, validateRequest_1.default)(poll_validation_1.PollValidation.createPollZodSchema), poll_controller_1.PollController.createPoll);
+router.get("/", poll_controller_1.PollController.getAllPolls);
+router.get("/:id", poll_controller_1.PollController.getSinglePoll);
+router.patch("/:id", (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN, user_1.ENUM_USER_ROLE.SUPER_ADMIN, user_1.ENUM_USER_ROLE.EDITOR, user_1.ENUM_USER_ROLE.REPORTER), (0, validateRequest_1.default)(poll_validation_1.PollValidation.updatePollZodSchema), poll_controller_1.PollController.updatePoll);
+router.delete("/:id", (0, auth_1.default)(user_1.ENUM_USER_ROLE.ADMIN, user_1.ENUM_USER_ROLE.SUPER_ADMIN, user_1.ENUM_USER_ROLE.EDITOR, user_1.ENUM_USER_ROLE.REPORTER), poll_controller_1.PollController.deletePoll);
+router.patch("/:pollId/vote/:optionId", (0, validateRequest_1.default)(poll_validation_1.PollValidation.voteForOptionZodSchema), poll_controller_1.PollController.voteForOption);
+exports.PollRoutes = router;
