@@ -21,6 +21,7 @@ router.post(
 );
 
 router.get("/", NewsController.getAllNews);
+router.get("/highlighted", NewsController.getHighlightedNewsController);
 router.get("/:id", NewsController.getSingleNews);
 router.get("/category/:slug", NewsController.getNewsByCategory);
 
@@ -47,5 +48,7 @@ router.delete(
   ),
   NewsController.deleteNews
 );
+
+
 
 export const NewsRoutes = router;

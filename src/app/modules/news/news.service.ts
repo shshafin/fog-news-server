@@ -109,6 +109,27 @@ const deleteNews = async (id: string): Promise<INews | null> => {
   return result;
 };
 
+const getHighlightedNews = async (
+  limit: number = 10
+): Promise<{
+  trending: INews[];
+  latest: INews[];
+}> => {
+  const [trending, latest] = await Promise.all([
+    News.find({ status: "published", isTrending: true })
+      .populate("category")
+      .sort({ createdAt: -1 })
+      .limit(limit),
+
+    News.find({ status: "published" })
+      .populate("category")
+      .sort({ createdAt: -1 })
+      .limit(limit),
+  ]);
+
+  return { trending, latest };
+};
+
 export const NewsService = {
   createNews,
   getSingleNews,
@@ -116,4 +137,7 @@ export const NewsService = {
   getAllNews,
   updateNews,
   deleteNews,
+  getNewsByCategorySlug,
+  getHighlightedNews,
+
 };

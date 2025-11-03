@@ -170,6 +170,21 @@ const deleteNews = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const getHighlightedNewsController = catchAsync(
+  async (req: Request, res: Response) => {
+    const limit = Math.min(parseInt(req.query.limit as string) || 10, 20);
+
+    const { trending, latest } = await NewsService.getHighlightedNews(limit);
+
+    sendResponse(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: "Highlighted news fetched successfully",
+      data: { trending, latest },
+    });
+  }
+);
+
 export const NewsController = {
   createNews,
   getSingleNews,
@@ -177,4 +192,5 @@ export const NewsController = {
   getAllNews,
   updateNews,
   deleteNews,
+  getHighlightedNewsController,
 };

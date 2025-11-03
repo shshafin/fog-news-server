@@ -17,6 +17,7 @@ export interface INews {
     metaTitle?: string;
     metaDescription?: string;
   };
+  isTrending?: boolean;
 }
 
 export type INewsModel = Model<INews, Record<string, unknown>>;

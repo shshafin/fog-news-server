@@ -61,6 +61,10 @@ const NewsSchema = new Schema<INews, INewsModel>(
         trim: true,
       },
     },
+    isTrending: {
+      type: Boolean,
+      default: false,
+    },
   },
   {
     timestamps: true,
