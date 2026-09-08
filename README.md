@@ -1,59 +1,61 @@
-# 🌫️ Fog News Server – REST API Backend
+# Fog News — API Server
 
-**TypeScript, Node.js, Express, MongoDB backend for Fog News**  
+TypeScript Express API that powers Fog News: articles and categories, e-paper, jobs and applications, media blocks, auth, and supporting content modules backed by MongoDB.
 
-[GitHub Repo](https://github.com/shshafin/fog-news-server)
-
----
-
-## 📖 Project Overview
-
-**Fog News Server** is a RESTful API backend that powers the Fog News platform.  
-It handles all server-side logic including:
-
-- Serving news & e-paper data  
-- Providing climate & weather updates  
-- Serving share market information  
-- Managing job circulars and applications  
-
-This backend connects to the MongoDB database and provides a reliable, fast, and scalable API for the frontend client.
+| | |
+| --- | --- |
+| **Client repo** | [fog-news-client](https://github.com/shshafin/fog-news-client) |
+| **Client demo** | [fog-news-client.vercel.app](https://fog-news-client.vercel.app) |
+| **Portfolio** | [shafinsadnan.com](https://shafinsadnan.com) |
 
 ---
 
-## ✨ Key Features
+## What this repo is
 
-- 📰 **News Management:** CRUD operations for news articles and e-papers  
-- ☀️ **Climate & Weather Updates:** Live weather & climate data  
-- 📈 **Share Market Data:** Market updates for investors and users  
-- 💼 **Job Circulars:** Create, manage, and forward job applications  
-- 🛠 **TypeScript + Node.js + Express:** Strongly typed, maintainable codebase  
-- 📦 **MongoDB Integration:** Efficient document storage and retrieval  
+A modular REST backend for a news product. Routes and domain modules live under `src/app/modules` with central registration in `src/app/routes`.
 
----
+## Core modules
 
-## 🛠️ Tech Stack
+- News, categories, comments, and polls
+- E-paper
+- Jobs and job applications
+- Video / multimedia blocks
+- Auth and users
+- Newsletter, advertisements, donations, quizzes, settings, and social media helpers
 
-![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Express.js](https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white)
-![MongoDB](https://img.shields.io/badge/MongoDB-47A248?style=for-the-badge&logo=mongodb&logoColor=white)
+## Tech stack
 
----
+- **Node.js** + **TypeScript**
+- **Express**
+- **MongoDB** / Mongoose
+- JWT auth helpers, multer uploads, Winston logging
+- Dotenv-based configuration
 
-## ⚡ Installation & Setup
+## Run locally
 
-Follow these steps to run the backend locally:
+Prerequisites: Node.js and a MongoDB instance.
 
 ```bash
-### 1. Clone the repository
 git clone https://github.com/shshafin/fog-news-server.git
-
-### 2. Navigate to the project folder
 cd fog-news-server
-
-### 3. Install dependencies
 npm install
+```
 
-### 4. Run server (development mode)
+Create a `.env` with the variables your local setup needs (MongoDB URI, JWT secret, mail/upload settings as required). **Do not commit secrets.**
+
+```bash
 npm run dev
+```
 
+Production-style run:
+
+```bash
+npm run build
+npm start
+```
+
+## Related
+
+- Frontend: https://github.com/shshafin/fog-news-client
+- Live client demo: https://fog-news-client.vercel.app
+- Portfolio: https://shafinsadnan.com
