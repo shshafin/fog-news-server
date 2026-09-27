@@ -1,61 +1,85 @@
-# Fog News — API Server
+# Fog News Server
 
-TypeScript Express API that powers Fog News: articles and categories, e-paper, jobs and applications, media blocks, auth, and supporting content modules backed by MongoDB.
+A TypeScript Express backend powering a digital news platform with content management, auth, and supporting modules.
 
-| | |
-| --- | --- |
-| **Client repo** | [fog-news-client](https://github.com/shshafin/fog-news-client) |
-| **Client demo** | [fog-news-client.vercel.app](https://fog-news-client.vercel.app) |
-| **Portfolio** | [shafinsadnan.com](https://shafinsadnan.com) |
+## Overview
 
----
+This API supports the full news product ecosystem, including:
+- articles and categories
+- comments and polls
+- e-paper sections
+- jobs and applications
+- multimedia blocks
+- newsletters and settings
+- user authentication and profiles
+- payment and subscription-related flows
 
-## What this repo is
+## Tech Stack
 
-A modular REST backend for a news product. Routes and domain modules live under `src/app/modules` with central registration in `src/app/routes`.
+- Node.js
+- TypeScript
+- Express.js
+- MongoDB + Mongoose
+- JWT authentication
+- Bcrypt
+- Multer + Cloudinary
+- Nodemailer
+- Stripe
+- Winston logger
+- Node-cron
 
-## Core modules
+## Features
 
-- News, categories, comments, and polls
-- E-paper
-- Jobs and job applications
-- Video / multimedia blocks
-- Auth and users
-- Newsletter, advertisements, donations, quizzes, settings, and social media helpers
+- modular backend structure
+- production-ready validation and error handling
+- secure auth flows
+- media upload support
+- scheduled background tasks
+- organized logging and monitoring
 
-## Tech stack
-
-- **Node.js** + **TypeScript**
-- **Express**
-- **MongoDB** / Mongoose
-- JWT auth helpers, multer uploads, Winston logging
-- Dotenv-based configuration
-
-## Run locally
-
-Prerequisites: Node.js and a MongoDB instance.
+## Run Locally
 
 ```bash
 git clone https://github.com/shshafin/fog-news-server.git
 cd fog-news-server
 npm install
-```
-
-Create a `.env` with the variables your local setup needs (MongoDB URI, JWT secret, mail/upload settings as required). **Do not commit secrets.**
-
-```bash
 npm run dev
 ```
 
-Production-style run:
+## Scripts
 
 ```bash
+npm run dev
 npm run build
 npm start
+npm run lint:check
+npm run lint:fix
+npm run prettier:fix
+```
+
+## Environment Variables
+
+```env
+PORT=5000
+MONGODB_URI=your_mongodb_uri
+JWT_SECRET=your_jwt_secret
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email
+SMTP_PASS=your_app_password
+STRIPE_SECRET_KEY=your_stripe_secret
+CLOUDINARY_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
 ```
 
 ## Related
 
-- Frontend: https://github.com/shshafin/fog-news-client
-- Live client demo: https://fog-news-client.vercel.app
+- Client: https://github.com/shshafin/fog-news-client
 - Portfolio: https://shafinsadnan.com
+
+## Author
+
+Shafin Sadnan
+
+GitHub: https://github.com/shshafin
